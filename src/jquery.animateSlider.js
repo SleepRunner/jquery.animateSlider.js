@@ -30,7 +30,7 @@
 			this.config			=	$.extend({},this.defaults,this.options);
 			this.slides			=	this.$element.children(".anim-slide");
 			this.slidesCount	=	this.slides.length;
-			this.interval		=	[];//Ovveride config.interval 
+			this.interval		=	this.options.interval;//[];//Ovveride config.interval 
 			this.current		=	0; //first slide	
 	
 			var $dots	=	$("<div class=\"anim-dots\"></div>");
